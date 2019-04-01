@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-glyphicons.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+    <title>My Task Board</title>
+</head>
+<body onload="beforeLoad()">
+<div class="container ">
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10 bg bodyTransparent ">
+            <h1 class="text-center"><img src="images/pencil-4x.png" alt="pencilIco">&nbsp;My Task Board</h1>
+            <div class="formBody">
+                <form id="taskForm" onsubmit="return resetForm();" >
+                <div class="form-row">
+                    <input id="taskText" class="col-12" type="text" placeholder="Type note here ....">
+                </div>
+                <br>
+                <div class="form-row rowSpacing">
+                    <label class="col-8"><strong>Set Date:</strong></label>
+                    <label class="col-4"><strong>Set Time:</strong></label>
+                </div>
+                <div class="form-row">
+                    <input class="col-8" type="date" id="taskDate"
+                           value="2018-01-01"
+                           min="2018-01-01" max="2018-12-31">
+                    <input class="col-4" type="time" id="taskTime"
+                           min="9:00" max="18:00" value="00:00:00">
+                </div>
+                <br>
+                <div class="form-row">
+                    <button class="btn btn-primary button" onclick="publishTask()">Save</button>
+                    <button class="btn btn-danger button"  onclick="resetForm()" >Reset</button>
+                </div>
+                </form>
+            </div>
+            <br>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+    <br>
+    <div id="notesBoard" class="row"></div>
+    </div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src=js/core.js></script>
+</body>
+</html>

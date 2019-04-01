@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'bringdown';
+    src: url('fonts/BRINGDOWN.ttf');
+format('truetype');
+    font-weight: bold;
+}
+
+body {
+    background-image: url("../images/body-background2.jpg");
+}
+
+.bodyTransparent {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+h1 {
+    font-family: 'bringdown';
+}
+
+.stickynote {
+    background-image: url("../images/sticky-note1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 276px;
+    width: 276px;
+    padding: 25px;
+    margin: 25px;
+
+}
+.rowSpacing {
+    margin-bottom: -10px;
+}
+.formBody {
+    background-image: url("../images/note.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25px;
+}
+
+.button {
+    margin: 5px;
+}
+
+#taskText, #taskDate, #taskTime {
+    background: transparent;
+    border: none;
+    font-weight: 700;
+}
+
+.outText {
+    direction: rtl;
+    text-align: right;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 120px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.glyp {
+    float: right;
+    display: none;
+    cursor: pointer;
+}
+
+.showX:hover .glyp {
+    display: block;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-ms-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
